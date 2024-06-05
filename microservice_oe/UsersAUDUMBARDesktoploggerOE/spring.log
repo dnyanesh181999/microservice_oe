@@ -1,0 +1,27 @@
+2024-06-05T14:39:43.528+05:30  INFO 23708 --- [microservice_oe] [restartedMain] c.c.l.MicroserviceOeApplication          : Starting MicroserviceOeApplication using Java 18.0.1.1 with PID 23708 (C:\Users\AUDUMBAR\git\microservice_oe\microservice_oe\target\classes started by AUDUMBAR in C:\Users\AUDUMBAR\git\microservice_oe\microservice_oe)
+2024-06-05T14:39:43.528+05:30  INFO 23708 --- [microservice_oe] [restartedMain] c.c.l.MicroserviceOeApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-06-05T14:39:43.855+05:30  INFO 23708 --- [microservice_oe] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-05T14:39:43.873+05:30  INFO 23708 --- [microservice_oe] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 1 JPA repository interface.
+2024-06-05T14:39:44.037+05:30  INFO 23708 --- [microservice_oe] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9093 (http)
+2024-06-05T14:39:44.038+05:30  INFO 23708 --- [microservice_oe] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-05T14:39:44.039+05:30  INFO 23708 --- [microservice_oe] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-05T14:39:44.078+05:30  INFO 23708 --- [microservice_oe] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-05T14:39:44.079+05:30  INFO 23708 --- [microservice_oe] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 547 ms
+2024-06-05T14:39:44.136+05:30  INFO 23708 --- [microservice_oe] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-05T14:39:44.143+05:30  INFO 23708 --- [microservice_oe] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-05T14:39:44.154+05:30  INFO 23708 --- [microservice_oe] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-05T14:39:44.156+05:30  INFO 23708 --- [microservice_oe] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2024-06-05T14:39:44.184+05:30  INFO 23708 --- [microservice_oe] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@8209b59
+2024-06-05T14:39:44.185+05:30  INFO 23708 --- [microservice_oe] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2024-06-05T14:39:44.187+05:30  WARN 23708 --- [microservice_oe] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-05T14:39:44.270+05:30  INFO 23708 --- [microservice_oe] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-05T14:39:44.300+05:30  INFO 23708 --- [microservice_oe] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-05T14:39:44.465+05:30  WARN 23708 --- [microservice_oe] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-05T14:39:44.763+05:30  INFO 23708 --- [microservice_oe] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-06-05T14:39:44.791+05:30  INFO 23708 --- [microservice_oe] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9093 (http) with context path ''
+2024-06-05T14:39:44.803+05:30  INFO 23708 --- [microservice_oe] [restartedMain] c.c.l.MicroserviceOeApplication          : Started MicroserviceOeApplication in 1.373 seconds (process running for 43.986)
+2024-06-05T14:39:44.807+05:30  INFO 23708 --- [microservice_oe] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-06-05T14:40:06.089+05:30  INFO 23708 --- [microservice_oe] [RMI TCP Connection(3)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-06-05T14:40:06.136+05:30  INFO 23708 --- [microservice_oe] [RMI TCP Connection(3)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-05T14:40:06.138+05:30  INFO 23708 --- [microservice_oe] [RMI TCP Connection(3)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2024-06-05T14:40:06.155+05:30  INFO 23708 --- [microservice_oe] [RMI TCP Connection(3)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
