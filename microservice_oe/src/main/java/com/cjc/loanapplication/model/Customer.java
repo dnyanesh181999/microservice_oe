@@ -54,12 +54,10 @@ public class Customer {
 	private AllPersonalDocs allPersonalDocs;
 	@OneToOne(cascade = CascadeType.ALL)
 	private SanctionLetter sanctionLetter;
-	@OneToOne(cascade = CascadeType.ALL)
+	@OneToOne(cascade = CascadeType.MERGE)
 	private Ledger ledger;
 	@OneToOne(cascade = CascadeType.ALL)
 	private LoanDisbursement loanDisbursement;
-	
-	
 	
 	
 }

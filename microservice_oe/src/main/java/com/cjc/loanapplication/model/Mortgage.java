@@ -20,8 +20,5 @@ public class Mortgage {
 	private Double propertyValue;
 	private String propertyType;
 	private Double loanOnProperty;
-	@Lob
-	private byte[] propertyProof;
-	@Lob
-	private byte[] propertyInsurance;
+	
 }

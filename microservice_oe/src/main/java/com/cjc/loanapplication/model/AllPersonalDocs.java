@@ -35,5 +35,11 @@ public class AllPersonalDocs {
 	private byte[] bankCheque;
 	@Lob
 	private byte[] bankStatement;
+	@Lob
+	private byte[] propertyProof;
+	@Lob
+	private byte[] propertyInsurance;
+	@Lob
+	private byte[] professionalSalarySlips;
 	
 }
