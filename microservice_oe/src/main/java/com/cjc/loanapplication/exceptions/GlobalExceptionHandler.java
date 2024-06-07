@@ -12,16 +12,16 @@ import jakarta.servlet.http.HttpServletRequest;
 
 @RestControllerAdvice
 public class GlobalExceptionHandler {
-@ExceptionHandler(ConfigDataResourceNotFoundException.class)
+@ExceptionHandler(NoResourceFoundException.class)
 public ResponseEntity<APIError>NoResourceFoundException(NoResourceFoundException excep,HttpServletRequest req)
 {
 	APIError error=new APIError();
-	error.setStatuscode(HttpStatus.NOT_FOUND.value());
+	error.setStatuscode(HttpStatus.BAD_REQUEST.value());
 	error.setMessage(excep.getMessage());
 	error.setDate(new Date());
 	error.setPath(req.getRequestURI());
-	error.setHttpmessage(HttpStatus.NOT_FOUND);
-	return new ResponseEntity<APIError>(error,HttpStatus.NOT_FOUND);
+	error.setHttpmessage(HttpStatus.BAD_REQUEST);
+	return new ResponseEntity<APIError>(error,HttpStatus.BAD_REQUEST);
 	
 }
 	
