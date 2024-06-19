@@ -1,5 +1,6 @@
 package com.cjc.loanapplication.serviceimpl;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -23,7 +24,14 @@ public class CustomerServiceImpl implements CustomerService{
 		List<Customer> lc= cr.findAll();
 		if(!lc.isEmpty())
 		{
-			return lc;
+			List<Customer>list = new ArrayList<Customer>();
+			lc.forEach((a)->{
+				if(a.getStatus().equals("Pending")) {
+					list.add(a);
+					
+				}
+			});
+			return list;
 		}
 		else {
 			throw new NoResourceFoundException("Not Any Customer......");
